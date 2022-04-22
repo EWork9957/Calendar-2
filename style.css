@@ -1,0 +1,78 @@
+body{
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e);   
+    font: 87.5%/1.5em "Lato", sans-serif;
+    margin: 0;
+    cursor: default;
+}
+.container{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 35%;
+    top: 20%
+}
+.monthname{
+    border-radius: 1em 1em 0 0;
+    background: #6bb5e6;
+    color: #fff;
+    padding: 3em 2em;
+
+    text-align: center;
+}
+#calendar-body{
+    background: rgb(220, 220, 220);
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+    color: #555;
+    display: inline-block;
+    padding: 2em;
+    width: 344px;
+}
+.calendar-weekDays{
+    color: #6bb5e6d8;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    column-gap: 1vw;
+}
+.calendar-monthDays{
+    padding-top: 0.5em;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(5, auto);
+    column-gap: 1vw;
+    row-gap: .5vw;
+}
+.prev-date, .next-date{
+    opacity: 0.5;
+}
+.prevMonth, .nextMonth{
+    margin-top: 50px;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: -55px;
+    left: -60px;
+}
+.nextMonth{
+    margin-left: 335px;
+    margin-top: 50px;
+}
+.prevMonth{
+    margin-top: 51px;
+}
+.cover{
+    background-color: #6bb5e6;
+    width: 230px;
+    position: absolute;
+    margin-top: 185px;
+    margin-left: 625px;
+    color: #6bb5e6;
+}
+
